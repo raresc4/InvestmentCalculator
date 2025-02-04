@@ -1,0 +1,5 @@
+<app-header />
+<app-user-input (calculateInvestments)="calculateInvestments($event)" />
+@if(opened) {
+<app-investment-results [annualData]="this.annualData" />
+}
